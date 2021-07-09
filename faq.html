@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="faq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/Logo.png" width="187" alt="">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item align-self-center">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="nav-link" href="project.html">Project</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="nav-link active" href="faq.html">Faq</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Header-->
+      <header class="head">
+          <div class="container">
+              <div class="row">
+                  <div class="col align-self-center">
+                    <h1 class="mb-4">Faq</h1>
+                    <p class="mb-4">banyak bingung? atau banyak pertanyaan tentang cara kerja kami? Yuk baca Faq Kami!
+                    </p>
+                    <a class="btn" href="mailto:amrildanoumar@gmail.com" role="button">Get Started</a>
+                  </div>
+                  <div class="col align-self-center">
+                    <img width="500px" src="images/Saly-22.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </header>
+
+
+      <section>
+        <div class="container mt-5">
+          <div class="about">
+              <h3>Ar Studio</h3>
+              <p>Lorem Ipsum Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of 
+                classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at 
+                Hampden-Sydney College in Virginia,</p>
+          </div>
+        </div>
+        <div class="container py-3">
+          <h2 class="mt-5" style="text-align: center;">Faq</h2>
+          <p class="mb-4" style="text-align: center;">Yang sering ditanyakan</p>
+          <button class="accordion">Apa yang harus anda siapkan?</button>
+          <div class="panel">
+            <p>Anda cukup menyiapkan isi konten website anda. karena anda lebih paham mengenai bisnis anda.</p>
+          </div>
+
+            <button class="accordion">Bagaimana dengan jam kerja AR Studio?</button>
+            <div class="panel">
+              <p>Jam kerja kami setiap hari senin-jumat mulai dari jam 10.00-18.00. kami mengerjakan project di jam kerja saja</p>
+            </div>
+
+              <button class="accordion">Berapa lama waktu pembuatan website?</button>
+              <div class="panel">
+                <p>Waktu pembuatan website tergantung dari scope project website anda. karena setiap
+                  website kami develop berbeda-beda.
+                </p>
+              </div>
+
+              <button class="accordion">Bagaimana jika anda sudah memiliki domain dan hosting?</button>
+              <div class="panel">
+                <p>Jika saat ini anda sudah memiliki domain dan hosting, kami hanya fokus dalam pembuatan webiste saja</p>
+              </div>
+
+              <button class="accordion">Apakah saya harus coding untuk dapat mengelola website?</button>
+              <div class="panel">
+                <p>Tidak. untuk itu kami juga akan membuat admin panel untuk anda dapat mengelola konten dengan mudah.</p>
+              </div>
+        </div>
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var a;
+
+          for (a = 0; a < acc.length; a++) {
+            acc[a].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+              }
+            });
+          }
+        </script>
+
+      </section>
+
+       <!-- Footer -->
+       <footer class="foot py-5">
+        <div class="container">
+            <div class="row">
+               <p>Copyright &copy; Amril 2021</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="signup.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <script>
+        function validateForm() {
+        var x = document.forms["myForm"]["email"].value
+        var y = document.forms["myForm"]["password"].value
+        if (x == "") {
+          alert("Email harus diisi!");
+          return false;
+        }
+        if (y == "") {
+          alert("Password harus diisi!");
+          return false;
+        }
+        if (x + y) {
+          alert("Telah terdaftar")
+        }
+      }
+      </script>
+    </head>
+  <body>
+    <form action="homepage.html" onsubmit="return validateForm()" method="POST" name="myForm" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Ayo sign up untuk dapat memesan sesuai paket pilihan anda.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Masukan Email" name="email">
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Masukan Password" name="password">
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Ulangi Password" name="psw-repeat">
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ingat saya
+          </label>
+          
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+            <a href="pricing.html">
+            <button type="button" class="cancelbtn">Cancel</button>
+            </a>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+
+      <footer class="foot py-5">
+        <div class="container">
+            <div class="row">
+               <p>Copyright &copy; Amril 2021</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+  </html>

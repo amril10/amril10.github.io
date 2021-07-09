@@ -1,0 +1,81 @@
+/* ini Project */
+body {
+    font-family: poppins;
+}
+
+/* navbar */
+.navbar {
+    background-color: black;
+    font-family: poppins;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar img {
+    width: 60px;
+    padding-top: 10px;
+}
+
+/* Ini header */
+header {
+    background-color: black;
+    color: white;
+}
+
+header p {
+    font-weight: 300;
+    color: rgb(211, 207, 207);
+}
+
+header .btn {
+    background-color: white;
+    color: black;
+    border: 0px;
+}
+ header .btn:hover {
+    background-color: rgb(196, 194, 194);
+}
+
+
+/* Ini Section */
+.projek {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projek .row {
+    margin: 8px -16;
+}
+
+/* Add padding BETWEEN each column */
+.projek .row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.projek .column {
+  float: center;
+  width: 50%;
+  background-color: none;
+}
+
+.projek .column:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 2);
+  }
+
+.projek .content {
+    padding: 20px;
+}
+
+
+/* ini Footer */
+footer {
+    background-color: black;
+    margin-top: 2em;
+    color: white;
+    text-align: center;
+}
