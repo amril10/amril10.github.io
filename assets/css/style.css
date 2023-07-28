@@ -1,0 +1,107 @@
+/* css untuk halaman admin */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-utama {
+    background-color: #7C9070;
+    color: white;
+}
+.btn-utama:hover {
+    background-color: #5f7055;
+    color: white;
+}
+
+.btn-second {
+    background-color: none;
+    border: 1px solid #7C9070;
+    color: #7C9070;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.footer {
+    height: fit-content;
+    min-height: 40vh;
+}
+
+.login {
+  height: fit-content;
+  min-height: 90vh;
+  padding-top: 3%;
+}
+
+.login .image {
+  max-width: 700px;
+}
+
+/* Untuk dashboard admin */
+   /* Style the sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 250px;
+      background-color: #9CA777;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    /* Style the main content */
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    /* Style the footer */
+    .footers {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #8a956a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+      
+    }
+/* end dashboard admin */
+
+
+@media only screen and (max-width: 800px) {
+.topright {
+  position: absolute;
+  max-width: 200px;
+}
+
+.btn-utama {
+    width: 100%;
+}
+.btn-second {
+    width: 100%;
+}
+
+ .sidebar {
+        width: 0;
+      }
+
+      .content {
+        margin-left: 0;
+      }
+}
